@@ -42,7 +42,7 @@
           <p
             class="font-bold flex items-center px-9 py-3 bg-[#41ff6b1a] rounded-3xl"
           >
-            <span>0</span
+            <span id="heart-count">0</span
             ><img
               class="w-[24px] h-[24px] ml-[10px]"
               src="assets/heart.png"
@@ -91,7 +91,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12  gap-7">
         <!-- card container -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-7 card-container md:col-span-9 "
+         id="card-container" class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-7 md:col-span-9 "
         >
           <div class="card bg-white shadow-lg p-5 rounded-2xl ">
             <div class="flex items-center justify-between">
@@ -102,7 +102,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">National Emergency Number</h3>
@@ -117,7 +117,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -131,7 +131,7 @@
               <div class="bg-[#dfefff] p-2 rounded-2xl">
                 <img class="h-[60px] w-[60px]" src="assets/police.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Police Helpline Number</h3>
@@ -146,7 +146,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -164,7 +164,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Fire Service Number</h3>
@@ -179,7 +179,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -197,7 +197,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Ambulance Service</h3>
@@ -212,7 +212,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -230,7 +230,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Women & Child Helpline</h3>
@@ -245,7 +245,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -263,7 +263,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1  flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Anti-Corruption Helpline</h3>
@@ -278,7 +278,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -296,7 +296,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Electricity Helpline</h3>
@@ -313,7 +313,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -331,7 +331,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Brac Helpline</h3>
@@ -346,7 +346,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -364,7 +364,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-gray-500"></i>
+              <i class="fa-regular fa-heart text-gray-500 love-btn"></i>
             </div>
             <div class="card-content mt-4 flex-1 flex flex-col justify-between">
               <h3 class="font-bold text-2xl">Bangladesh Railway Helpline</h3>
@@ -379,7 +379,7 @@
                 Copy
               </button>
               <button
-                class="btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
+                class="call-btn btn w-1/2 bg-[#00a63e] text-white font-semibold hover:bg-black"
               >
                 <i class="fa-solid fa-phone"></i>
                 Call
@@ -408,5 +408,8 @@
         </div>
       </div>
     </div>
+
+    <!-- script link -->
+     <script src="scripts/index.js"></script>
   </body>
 </html>
