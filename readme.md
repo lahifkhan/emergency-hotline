@@ -45,6 +45,7 @@ container.appendChild(div)
 
 ---
 3. What is **Event Bubbling** and how does it work?
+   
 **Answer Question3:**
 Even Bubbling হচ্ছে যখন কোন event create হয় তখন প্রথমে যে element এ ঘটেছে সেখানে যায় এটা target element বলে। সেখানে কোন লিসেনার থাকলে সেটা execute হয়। এর পর ধাপে ধাপে সেটা তার parent element গুলোতে ছড়িয়ে পরে।
 যেমন:
@@ -58,6 +59,7 @@ Even Bubbling হচ্ছে যখন কোন event create হয় তখন 
 
 ---
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+   
 **Answer Question4:**
 Event Delegation হচ্ছে এমন একটা technique যেখানে প্রতিটা child element কে আলাদা লিসেনার না দিয়ে তার parent element-এ listener add করে event.target ব্যবহার করে তার child-এ যেখানে event trigger হয়েছে সেখানে কোন action perform করতে পারি।
 
