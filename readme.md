@@ -36,7 +36,6 @@ div.innerHTML = `
 
  <h> hello </h1>
 `
-
 এখন যেখানে নতুন element insert করব সেটা DOM থেকে নিয়ে আসতে হবে
 যেমন
 const container = document.getElementById("div-container")
@@ -46,14 +45,14 @@ container.appendChild(div)
 ---
 3. What is **Event Bubbling** and how does it work?
 **Answer Question3:**
-   Even Bubbling হচ্ছে যখন কোন event create হয় তখন প্রথমে যে element এ ঘটেছে সেখানে যায় এটা target element বলে। সেখানে কোন লিসেনার থাকলে সেটা execute হয়। এর পর ধাপে ধাপে সেটা তার parent element গুলোতে ছড়িয়ে পরে।
-   যেমন:
-   একটি button ক্লিক করলে, যা একটি div-এর ভিতরে আছে এবং সেটি আবার body-এর ভিতরে।
-   প্রথমে ইভেন্ট button-এ triggered হবে। তারপর সেটা div-এ যাবে, এখানে লিসেনার থাকলে এটাও execute হবে। তারপর সেটা body পর্যন্ত পৌঁছে যাবে। যেখানে লিসেনার পাবে, বাবলিং-এর সময় সেটাই execute করবে।
-   এইখানে তিনটা ধাপে হবে:
-   প্রথমে capture phase-এ যেখানে triggered হয়েছে সেখানে যাবে।
-   তারপর target phase-এ target element-এ কোন লিসেনার থাকলে সেটা execute হবে।
-   এরপর বাবলিং শুরু হবে। parent element-এ কোন লিসেনার থাকলে সেটা execute হবে, এভাবে ধাপে ধাপে document পর্যন্ত পৌঁছে যাবে।
+Even Bubbling হচ্ছে যখন কোন event create হয় তখন প্রথমে যে element এ ঘটেছে সেখানে যায় এটা target element বলে। সেখানে কোন লিসেনার থাকলে সেটা execute হয়। এর পর ধাপে ধাপে সেটা তার parent element গুলোতে ছড়িয়ে পরে।
+যেমন:
+একটি button ক্লিক করলে, যা একটি div-এর ভিতরে আছে এবং সেটি আবার body-এর ভিতরে।
+প্রথমে ইভেন্ট button-এ triggered হবে। তারপর সেটা div-এ যাবে, এখানে লিসেনার থাকলে এটাও execute হবে। তারপর সেটা body পর্যন্ত পৌঁছে যাবে। যেখানে লিসেনার পাবে, বাবলিং-এর সময় সেটাই execute করবে।
+এইখানে তিনটা ধাপে হবে:
+প্রথমে capture phase-এ যেখানে triggered হয়েছে সেখানে যাবে।
+তারপর target phase-এ target element-এ কোন লিসেনার থাকলে সেটা execute হবে।
+এরপর বাবলিং শুরু হবে। parent element-এ কোন লিসেনার থাকলে সেটা execute হবে, এভাবে ধাপে ধাপে document পর্যন্ত পৌঁছে যাবে।
 
 
 ---
