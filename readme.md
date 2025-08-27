@@ -42,6 +42,7 @@ const container = document.getElementById("div-container")
 
 এখানে DOM থেকে div-container আইডি দিয়ে ওই container কে নিয়ে এসেছি এখন এর child হিসেবে নতুন তৈরি করা element টা দিয়ে দিব।
 container.appendChild(div)
+
 ---
 3. What is **Event Bubbling** and how does it work?
 **Answer Question3:**
