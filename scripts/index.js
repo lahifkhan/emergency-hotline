@@ -1,10 +1,10 @@
-console.log("connected");
+
 
 function getElement(id){
     return document.getElementById(id);
     
 }
-console.log();
+
 
 getElement("card-container").addEventListener("click",function(event){
    
@@ -14,7 +14,7 @@ getElement("card-container").addEventListener("click",function(event){
          getElement("heart-count").innerText = heartCount+1
        
     }
-    // console.log(event.target)
+   
 
     // call button functionality
     if(event.target.closest(".call-btn")){
