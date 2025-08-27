@@ -70,7 +70,10 @@ getElement("card-container").addEventListener("click",function(event){
        const copyCount = Number( getElement("copy-count").innerText);
        getElement("copy-count").innerText = copyCount+1;
 
-         navigator.clipboard.writeText(serviceNumber);
+         navigator.clipboard.writeText(serviceNumber)
+         .then(()=>{
+            alert(`Number has been copied:${serviceNumber}`);
+         })
 
 
     }
