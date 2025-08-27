@@ -85,4 +85,3 @@ Event Delegation এর উপকারিতা :
 2) stopPropagation() এটা Event এর বাবলিং বন্ধ করার কাজে লাগে। যাতে event এর parent ছড়িয়ে যাবে না।  
 যেমন  
 একটি button একটা div এর ভিতরে আছে। এখন button এ click listener এর সময় stopPropagation() add করে দিলে div এর মধ্যে কোন listener থাকলে সেটা trigger হবে না।  
---- end ---
