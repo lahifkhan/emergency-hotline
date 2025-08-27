@@ -17,12 +17,15 @@ getElement("card-container").addEventListener("click",function(event){
     // console.log(event.target)
 
     // call button functionality
-    if(event.target.className.includes("call-btn")){
-      
-        const serviceName= event.target.parentNode.parentNode.children[1].children[1].innerText;
+    if(event.target.closest(".call-btn")){
+      const callBtn = event.target.closest(".call-btn")
+     
+        const serviceName= callBtn.parentNode.parentNode.children[1].children[1].innerText;
+         
         // console.log(event.target.parentNode.parentNode.children[1].children[0].innerText)
-        const serviceHeadlineName = event.target.parentNode.parentNode.children[1].children[0].innerText;
-        const serviceNumber = event.target.parentNode.parentNode.children[1].children[2].innerText;
+        const serviceHeadlineName = callBtn.parentNode.parentNode.children[1].children[0].innerText;
+       
+        const serviceNumber = callBtn.parentNode.parentNode.children[1].children[2].innerText;
        
         const numberOfCoin =Number(getElement("coin-count").innerText) ;
         if(numberOfCoin>=20){
@@ -54,6 +57,20 @@ getElement("card-container").addEventListener("click",function(event){
 
         
 
+
+
+    }
+
+    // copies functionality 
+    if(event.target.closest(".copy-btn")){
+        const copyBtn = event.target.closest(".copy-btn");
+         const serviceNumber = copyBtn.parentNode.parentNode.children[1].children[2].innerText;
+         console.log(serviceNumber);
+
+       const copyCount = Number( getElement("copy-count").innerText);
+       getElement("copy-count").innerText = copyCount+1;
+
+         navigator.clipboard.writeText(serviceNumber);
 
 
     }
